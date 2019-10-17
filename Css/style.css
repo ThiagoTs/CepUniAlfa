@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(93, 85, 116);
+ }
+ h1 {
+     text-align: center;
+    font: bold 35pt Arial; 
+    color: rgb(218, 241, 9)
+ }
+ div {
+     font-size: 25pt;
+ }
+ label {
+     font-size: 15pt;
+}
+a#pa {
+    margin-right: 50px;
+}
+a {
+    font: bold 13pt ;
+    color:rgb(29, 204, 235);
+}
+

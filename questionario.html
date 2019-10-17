@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questionario</title>
+    <script type="text/javascript" src="javaScript.js" ></script>
+    <script type="text/javascript" src="Persistencia/salvar.js" ></script>
+    <link rel="stylesheet" href="Css/style.css">
+
+    
+    <h1>Questionario</h1>
+    <hr>
+</head>
+
+<body onload="javascript:aoCarregar();" style="color: white;" >
+
+    <input type="hidden" id="perguntaAtual" value=""/><br />
+    <div id="pergunta1">
+        <form id="questao1" name ="nomeQuest1" method = "post" >
+        <p> 1) Pergunta numero 1?</p>
+    
+        <label>
+        <input type="radio" name="questao1" value="a" /> A) resposta1;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao1" value="b" /> B) resposta2;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao1" value="c" /> C) resposta3;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao1" value="d" /> D) resposta4.</label>
+        <br />
+        <br />
+        <br/>
+        </form>
+    </div> 
+	<div id="pergunta2">
+        <form id="questao2" name ="nomeQuest" method = "post" >
+        <p> 2) Pergunta numero 2?</p>
+
+        <label>
+        <input type="radio" name="questao2" value="a" /> A) resposta1;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao2" value="b" /> B) resposta2;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao2" value="c" /> C) resposta3;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao2" value="d" /> D) resposta4.</label>
+        <br />
+        <br />
+        <br />
+        </form>
+    </div>
+	<div id="pergunta3">
+        <form id="questao3" name ="nomeQuest" method = "post" >
+        <p>3) Pergunta numero 3?</p>
+
+        <label>
+        <input type="radio" name="questao3" value="a" /> A) resposta1;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao3" value="b" /> B) resposta2;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao3" value="c" /> C) resposta3;</label>
+        <br />
+        <label>
+        <input type="radio" name="questao3" value="d" /> D) resposta4.</label>
+        <br/>
+        <br/>
+        <br/>
+        </form>
+    </div>
+    
+	
+	<a id = "pa" href="javascript:perguntaAnterior(); "  >Pergunta anterior</a>
+	<a id = "ps" href="javascript:proximaPergunta();"  >Pergunta seguinte</a>
+    <hr/>
+    
+    <button id="Bsalvar" style="display: none"  onclick="converter()" >Salvar</button>
+</body>
+</html>
