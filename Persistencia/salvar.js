@@ -14,26 +14,27 @@ function converter() {
     objJson = JSON.stringify(obj);
 
 
-
-
-    console.log(objJson);
-
-
-        var http = new XMLHttpRequest();
-        var url = 'http://137.135.71.213:5000/api/answer';
-        var params = objJson;
-        http.open('POST', url, true);
+    console.log(objJson)
     
-        //Send the proper header information along with the request
-        http.setRequestHeader('Content-type', 'application/json');
-    
-        http.onreadystatechange = function () {//Call a function when the state changes.
-            if (http.readyState == 4 && http.status == 200) {
-                alert(http.responseText);
-            }
+
+
+    var http = new XMLHttpRequest();
+    var url = 'http://137.135.71.213:5000/api/answer';
+    var params = objJson;
+    http.open('POST', url, true);
+
+    //Send the proper header information along with the request
+    http.setRequestHeader('Content-type', 'application/json');
+
+    http.onreadystatechange = function () {//Call a function when the state changes.
+        if (http.readyState == 4 && http.status == 200) {
+            alert(http.responseText);
         }
-        http.send(params);
+    }
+    http.send(params);
+    alert('Obrigado!')
     
+
 
 
 }
