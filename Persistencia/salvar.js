@@ -2,36 +2,38 @@
 function converter() {
 
     var obj = new Object();
-    obj.Descricao1 = 'Pergunta numero 1?';
-    obj.Letra1 = Radio1();
+    obj.Quest1 = 'Q1';
+    obj.option1 = Radio1();
 
-    obj.Descricao2 = 'Pergunta numero 2?';
-    obj.Letra2 = Radio2();
+    obj.Quest2 = 'Q2';
+    obj.option2 = Radio2();
 
-    obj.Descricao3 = 'Pergunta numero 3?';
-    obj.Letra3 = Radio3();
+    obj.Quest3 = 'Q3';
+    obj.option3 = Radio3();
 
     objJson = JSON.stringify(obj);
 
 
-    console.log(objSerialized);
 
 
+    console.log(objJson);
 
-    var http = new XMLHttpRequest();
-    var url = 'http://137.135.71.213:5000/api/answer';
-    var params = objJson;
-    http.open('POST', url, true);
 
-    //Send the proper header information along with the request
-    http.setRequestHeader('Content-type', 'application/json');
-
-    http.onreadystatechange = function () {//Call a function when the state changes.
-        if (http.readyState == 4 && http.status == 200) {
-            alert(http.responseText);
+        var http = new XMLHttpRequest();
+        var url = 'http://137.135.71.213:5000/api/answer';
+        var params = objJson;
+        http.open('POST', url, true);
+    
+        //Send the proper header information along with the request
+        http.setRequestHeader('Content-type', 'application/json');
+    
+        http.onreadystatechange = function () {//Call a function when the state changes.
+            if (http.readyState == 4 && http.status == 200) {
+                alert(http.responseText);
+            }
         }
-    }
-    http.send(params);
+        http.send(params);
+    
 
 
 }
