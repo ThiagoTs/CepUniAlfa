@@ -12,10 +12,18 @@ function escondeTudo(){
 }
 function perguntaAnterior(){
     atual = document.getElementById('perguntaAtual').value;
+    if(atual <4 ){
+        document.getElementById('Bsalvar').style.display = 'none';
+  
+    }
     if(atual > 1){
         escondeTudo();
         document.getElementById('perguntaAtual').value--;
         document.getElementById('pergunta'+document.getElementById('perguntaAtual').value).style.display = "block";
+    }
+    if(atual <3 ){
+        document.getElementById('Bsalvar').style.display = 'none';
+  
     }
 }
 
@@ -32,5 +40,9 @@ function proximaPergunta(){
         document.getElementById('pergunta'+document.getElementById('perguntaAtual').value).style.display = "block";
         
     }
+
     
+}
+function voltar(){
+    window.location.reload();
 }

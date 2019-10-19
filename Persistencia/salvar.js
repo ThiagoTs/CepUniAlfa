@@ -2,14 +2,11 @@
 function converter() {
 
     var obj = new Object();
-    obj.Quest1 = 'Q1';
-    obj.option1 = Radio1();
+    obj.Q1 = Radio1();
 
-    obj.Quest2 = 'Q2';
-    obj.option2 = Radio2();
+    obj.Q2= Radio2();
 
-    obj.Quest3 = 'Q3';
-    obj.option3 = Radio3();
+    obj.Q3 = Radio3();
 
     objJson = JSON.stringify(obj);
 
@@ -32,7 +29,9 @@ function converter() {
         }
     }
     http.send(params);
-    alert('Obrigado!')
+    alert('Obrigado!');
+    voltar();
+
     
 
 

@@ -1,22 +1,46 @@
 body {
-    background-color: rgb(93, 85, 116);
+    background-color: white;
  }
  h1 {
      text-align: center;
-    font: bold 35pt Arial; 
-    color: rgb(218, 241, 9)
+    font: bold 20pt Arial; 
+    color: rgb(22, 11, 11);
  }
  div {
-     font-size: 25pt;
+     font-size: 20pt;
+     color: black;
  }
  label {
-     font-size: 15pt;
+     font-size: 17pt;
+     color: black;
 }
 a#pa {
     margin-right: 50px;
 }
 a {
-    font: bold 13pt ;
-    color:rgb(29, 204, 235);
+    font: bold 14pt ;
+    color: black;
+}
+	
+button#Bsalvar {
+    border:1px solid #25692A;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 8px;
+    text-decoration:none;
+    color: green;
 }
 
+img{
+    max-width:100%;
+    height:auto;
+}
+h3#alunos{
+    text-align: center;
+    font-size: 10pt; 
+    color: rgb(22, 11, 11);
+    
+ 
+}

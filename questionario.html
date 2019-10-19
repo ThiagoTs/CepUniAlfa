@@ -9,9 +9,10 @@
     <script type="text/javascript" src="Persistencia/salvar.js" ></script>
     <link rel="stylesheet" href="Css/style.css">
 
-    
-    <h1>Questionário</h1>
+   <!-- <img src="http://www.cepeunialfa.com.br/banners/CEPE19n.jpg" alt="some text" /> -->
+   <img src="cepe.jpg" alt="some text" />
     <hr>
+    <h1>Questionário</h1>
 </head>
 
 <body onload="javascript:aoCarregar();" style="color: white;" >
@@ -34,7 +35,6 @@
         <input type="radio" name="questao1" value="d" /> D) resposta4.</label>
         <br />
         <br />
-        <br/>
         </form>
     </div> 
 	<div id="pergunta2">
@@ -52,7 +52,6 @@
         <br />
         <label>
         <input type="radio" name="questao2" value="d" /> D) resposta4.</label>
-        <br />
         <br />
         <br />
         </form>
@@ -74,15 +73,17 @@
         <input type="radio" name="questao3" value="d" /> D) resposta4.</label>
         <br/>
         <br/>
-        <br/>
         </form>
     </div>
     
 	
-	<a id = "pa" href="javascript:perguntaAnterior(); "  >Pergunta anterior</a>
-	<a id = "ps" href="javascript:proximaPergunta();"  >Pergunta seguinte</a>
+	<a id = "pa" href="javascript:perguntaAnterior(); "  > << Pergunta anterior</a>
+    <a id = "ps" href="javascript:proximaPergunta();"  >Pergunta seguinte >></a>
+    
     <hr/>
     
     <button id="Bsalvar" style="display: none"  onclick="converter()" >Salvar</button>
+    <br/>
+    <h3 id = "alunos"> Elaborado pelos alunos do curso de Sistema de informação</h3>
 </body>
 </html>
